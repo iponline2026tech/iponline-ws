@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/cash_session.totals_changed.schema.json",
+  "title": "data de cash_session.totals_changed",
+  "type": "object",
+  "required": [
+    "cashIn",
+    "transferIn",
+    "expenses",
+    "expectedCash",
+    "sessionId",
+    "version"
+  ],
+  "properties": {
+    "cashIn": {
+      "type": "number"
+    },
+    "transferIn": {
+      "type": "number"
+    },
+    "expenses": {
+      "type": "number"
+    },
+    "expectedCash": {
+      "type": "number"
+    },
+    "sessionId": {
+      "type": "integer"
+    },
+    "version": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "abonosIn": {
+      "type": "number"
+    },
+    "paymentsCount": {
+      "type": "integer"
+    }
+  }
+}

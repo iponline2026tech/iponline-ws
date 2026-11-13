@@ -1,0 +1,27 @@
+{
+  "v": 1,
+  "seq": 9018,
+  "id": "0192f5a0-0015-7000-8000-00000000233d",
+  "type": "quotation.created",
+  "occurredAt": "2026-11-12T15:05:01.120061Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81021",
+  "data": {
+    "quotation": {
+      "id": 15,
+      "serial": "COT-000015",
+      "customerId": 2,
+      "status": "draft",
+      "total": 50000,
+      "updatedAt": "2026-11-12T15:04:15.120015Z"
+    }
+  }
+}

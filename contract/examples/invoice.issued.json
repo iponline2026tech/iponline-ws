@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "seq": 9024,
+  "id": "0192f5a0-001b-7000-8000-000000002343",
+  "type": "invoice.issued",
+  "occurredAt": "2026-11-12T15:05:07.120067Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81027",
+  "data": {
+    "invoice": {
+      "id": 88,
+      "saleId": 301,
+      "serial": "FE-000088",
+      "dianNumber": null,
+      "total": 75000,
+      "status": "issued",
+      "version": "2026-11-12T15:04:21.120021Z"
+    }
+  }
+}

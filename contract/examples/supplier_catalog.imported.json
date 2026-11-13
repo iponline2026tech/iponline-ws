@@ -1,0 +1,22 @@
+{
+  "v": 1,
+  "seq": 9037,
+  "id": "0192f5a0-0028-7000-8000-000000002350",
+  "type": "supplier_catalog.imported",
+  "occurredAt": "2026-11-12T15:05:20.120080Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81040",
+  "data": {
+    "supplierId": 10,
+    "linked": 128,
+    "warnings": [
+      "Fila 44: código BJ-9981 sin producto en el catálogo"
+    ]
+  }
+}

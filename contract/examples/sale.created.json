@@ -1,0 +1,29 @@
+{
+  "v": 1,
+  "seq": 9021,
+  "id": "0192f5a0-0018-7000-8000-000000002340",
+  "type": "sale.created",
+  "occurredAt": "2026-11-12T15:05:04.120064Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81024",
+  "data": {
+    "sale": {
+      "id": 301,
+      "serial": "PED-000301",
+      "customerId": 2,
+      "customerName": "VICTOR MANUEL ROJAS",
+      "currentStage": "verification",
+      "status": "open",
+      "total": 75000,
+      "updatedAt": "2026-11-12T15:04:18.120018Z"
+    }
+  }
+}

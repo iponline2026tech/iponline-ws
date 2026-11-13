@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/backup.created.schema.json",
+  "title": "data de backup.created",
+  "type": "object",
+  "required": [
+    "backup"
+  ],
+  "properties": {
+    "backup": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "sizeBytes",
+        "createdAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "sizeBytes": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "v": 1,
+  "seq": 9010,
+  "id": "0192f5a0-000d-7000-8000-000000002335",
+  "type": "product.prices_changed",
+  "occurredAt": "2026-11-12T15:04:53.120053Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81013",
+  "data": {
+    "productId": 4,
+    "prices": {
+      "p1": 25000,
+      "p2": 23500,
+      "p3": 22000,
+      "p4": 21000
+    },
+    "ivaRate": 19,
+    "version": "2026-11-12T15:04:08.120008Z"
+  }
+}

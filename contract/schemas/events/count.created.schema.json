@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/count.created.schema.json",
+  "title": "data de count.created",
+  "type": "object",
+  "required": [
+    "count"
+  ],
+  "properties": {
+    "count": {
+      "type": "object",
+      "required": [
+        "id",
+        "serial",
+        "warehouseId",
+        "status",
+        "items",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "serial": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "warehouseId": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "verified",
+            "corroborated"
+          ]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "productId",
+              "productCode",
+              "location",
+              "expectedQty",
+              "countedQty"
+            ],
+            "properties": {
+              "productId": {
+                "type": "integer"
+              },
+              "productCode": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              },
+              "expectedQty": {
+                "type": "integer"
+              },
+              "countedQty": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

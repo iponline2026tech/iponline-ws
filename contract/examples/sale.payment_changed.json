@@ -1,0 +1,25 @@
+{
+  "v": 1,
+  "seq": 9023,
+  "id": "0192f5a0-001a-7000-8000-000000002342",
+  "type": "sale.payment_changed",
+  "occurredAt": "2026-11-12T15:05:06.120066Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 7,
+    "name": "Laura Sofía Castro"
+  },
+  "correlationId": "req-81026",
+  "data": {
+    "saleId": 301,
+    "paidTotal": 50000,
+    "creditAmount": 25000,
+    "balance": 0,
+    "paymentVerified": true,
+    "version": "2026-11-12T15:04:20.120020Z"
+  }
+}

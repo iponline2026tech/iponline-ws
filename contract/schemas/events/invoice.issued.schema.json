@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/invoice.issued.schema.json",
+  "title": "data de invoice.issued",
+  "type": "object",
+  "required": [
+    "invoice"
+  ],
+  "properties": {
+    "invoice": {
+      "type": "object",
+      "required": [
+        "id",
+        "saleId",
+        "serial",
+        "dianNumber",
+        "total",
+        "status",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "saleId": {
+          "type": "integer"
+        },
+        "serial": {
+          "type": "string"
+        },
+        "dianNumber": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "total": {
+          "type": "number"
+        },
+        "status": {
+          "const": "issued"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "v": 1,
+  "seq": 9016,
+  "id": "0192f5a0-0013-7000-8000-00000000233b",
+  "type": "count.status_changed",
+  "occurredAt": "2026-11-12T15:04:59.120059Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81019",
+  "data": {
+    "entity": {
+      "kind": "count",
+      "id": 8,
+      "version": "2026-11-12T15:04:14.120014Z"
+    },
+    "from": "verified",
+    "to": "corroborated",
+    "differences": [
+      {
+        "productId": 4,
+        "location": "ESTANTE-P1-01",
+        "expectedQty": 18,
+        "countedQty": 17
+      }
+    ]
+  }
+}

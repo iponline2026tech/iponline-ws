@@ -1,0 +1,26 @@
+{
+  "v": 1,
+  "seq": 9026,
+  "id": "0192f5a0-001d-7000-8000-000000002345",
+  "type": "payment.created",
+  "occurredAt": "2026-11-12T15:05:09.120069Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "employee",
+    "id": 7,
+    "name": "Laura Sofía Castro"
+  },
+  "correlationId": "req-81029",
+  "data": {
+    "payment": {
+      "id": 640,
+      "customerId": 2,
+      "saleId": 301,
+      "method": "transfer",
+      "amount": 50000,
+      "status": "review",
+      "updatedAt": "2026-11-12T15:04:23.120023Z"
+    }
+  }
+}

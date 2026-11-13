@@ -1,0 +1,23 @@
+{
+  "v": 1,
+  "seq": 9043,
+  "id": "0192f5a0-002e-7000-8000-000000002356",
+  "type": "backup.created",
+  "occurredAt": "2026-11-12T15:05:26.120086Z",
+  "companyId": null,
+  "warehouseIds": [],
+  "actor": {
+    "type": "superadmin",
+    "id": 1,
+    "name": "Carlos Mario Administrador"
+  },
+  "correlationId": "req-81046",
+  "data": {
+    "backup": {
+      "id": "backup-20261112-150405",
+      "kind": "manual",
+      "sizeBytes": 48213904,
+      "createdAt": "2026-11-12T15:04:33.120033Z"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/sale.payment_changed.schema.json",
+  "title": "data de sale.payment_changed",
+  "type": "object",
+  "required": [
+    "saleId",
+    "paidTotal",
+    "creditAmount",
+    "balance",
+    "paymentVerified",
+    "version"
+  ],
+  "properties": {
+    "saleId": {
+      "type": "integer"
+    },
+    "paidTotal": {
+      "type": "number"
+    },
+    "creditAmount": {
+      "type": "number"
+    },
+    "balance": {
+      "type": "number"
+    },
+    "paymentVerified": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

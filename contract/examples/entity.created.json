@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "seq": 9004,
+  "id": "0192f5a0-0007-7000-8000-00000000232f",
+  "type": "entity.created",
+  "occurredAt": "2026-11-12T15:04:47.120047Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81007",
+  "data": {
+    "entity": {
+      "kind": "brand",
+      "id": 14,
+      "version": "2026-11-12T15:04:02.120002Z"
+    },
+    "row": {
+      "id": 14,
+      "name": "AKT",
+      "isActive": true,
+      "updatedAt": "2026-11-12T15:04:02.120002Z"
+    }
+  }
+}

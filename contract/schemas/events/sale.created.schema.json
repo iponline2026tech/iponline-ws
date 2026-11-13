@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/sale.created.schema.json",
+  "title": "data de sale.created",
+  "type": "object",
+  "required": [
+    "sale"
+  ],
+  "properties": {
+    "sale": {
+      "type": "object"
+    }
+  }
+}

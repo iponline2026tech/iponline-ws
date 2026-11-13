@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/quotation.updated.schema.json",
+  "title": "data de quotation.updated",
+  "type": "object",
+  "required": [
+    "entity",
+    "row",
+    "changedFields"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "quotation"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "row": {
+      "type": "object"
+    },
+    "changedFields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

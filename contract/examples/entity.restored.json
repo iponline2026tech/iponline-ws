@@ -1,0 +1,35 @@
+{
+  "v": 1,
+  "seq": 9008,
+  "id": "0192f5a0-000b-7000-8000-000000002333",
+  "type": "entity.restored",
+  "occurredAt": "2026-11-12T15:04:51.120051Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "superadmin",
+    "id": 1,
+    "name": "Carlos Mario Administrador"
+  },
+  "correlationId": "req-81011",
+  "data": {
+    "entity": {
+      "kind": "product",
+      "id": 3,
+      "version": "2026-11-12T15:04:06.120006Z"
+    },
+    "row": {
+      "id": 3,
+      "code": "DG121002-1",
+      "name": "ABRAZADERA UNIVERSAL",
+      "status": "active",
+      "updatedAt": "2026-11-12T15:04:06.120006Z"
+    },
+    "recycleBinId": 57,
+    "restoredBy": {
+      "type": "superadmin",
+      "id": 1,
+      "name": "Carlos Mario Administrador"
+    }
+  }
+}

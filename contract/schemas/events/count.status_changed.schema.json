@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/count.status_changed.schema.json",
+  "title": "data de count.status_changed",
+  "type": "object",
+  "required": [
+    "entity",
+    "from",
+    "to",
+    "differences"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "count"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "from": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "verified",
+        "corroborated"
+      ]
+    },
+    "to": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "verified",
+        "corroborated"
+      ]
+    },
+    "differences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "productId",
+          "location",
+          "expectedQty",
+          "countedQty"
+        ],
+        "properties": {
+          "productId": {
+            "type": "integer"
+          },
+          "location": {
+            "type": "string"
+          },
+          "expectedQty": {
+            "type": "integer"
+          },
+          "countedQty": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "v": 1,
+  "seq": 9009,
+  "id": "0192f5a0-000c-7000-8000-000000002334",
+  "type": "entity.deleted",
+  "occurredAt": "2026-11-12T15:04:52.120052Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81012",
+  "data": {
+    "entity": {
+      "kind": "product_code",
+      "id": 31,
+      "version": "2026-11-12T15:04:07.120007Z"
+    },
+    "parent": {
+      "kind": "product",
+      "id": 1
+    }
+  }
+}

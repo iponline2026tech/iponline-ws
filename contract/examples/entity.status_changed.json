@@ -1,0 +1,31 @@
+{
+  "v": 1,
+  "seq": 9006,
+  "id": "0192f5a0-0009-7000-8000-000000002331",
+  "type": "entity.status_changed",
+  "occurredAt": "2026-11-12T15:04:49.120049Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81009",
+  "data": {
+    "entity": {
+      "kind": "customer",
+      "id": 2,
+      "version": "2026-11-12T15:04:04.120004Z"
+    },
+    "from": "active",
+    "to": "inactive",
+    "reason": "El taller cerró en octubre",
+    "row": {
+      "id": 2,
+      "name": "VICTOR MANUEL ROJAS",
+      "status": "inactive",
+      "updatedAt": "2026-11-12T15:04:04.120004Z"
+    }
+  }
+}

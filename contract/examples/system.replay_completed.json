@@ -1,0 +1,19 @@
+{
+  "v": 1,
+  "seq": 0,
+  "id": "0192f5a0-0001-7000-8000-000000002329",
+  "type": "system.replay_completed",
+  "occurredAt": "2026-11-12T15:04:41.120041Z",
+  "companyId": null,
+  "warehouseIds": [],
+  "actor": {
+    "type": "system",
+    "id": null,
+    "name": "importadoraRealtime"
+  },
+  "data": {
+    "fromSeq": 8971,
+    "toSeq": 9000,
+    "count": 12
+  }
+}

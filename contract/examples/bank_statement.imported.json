@@ -1,0 +1,24 @@
+{
+  "v": 1,
+  "seq": 9029,
+  "id": "0192f5a0-0020-7000-8000-000000002348",
+  "type": "bank_statement.imported",
+  "occurredAt": "2026-11-12T15:05:12.120072Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "employee",
+    "id": 7,
+    "name": "Laura Sofía Castro"
+  },
+  "correlationId": "req-81032",
+  "data": {
+    "statementId": 12,
+    "bank": "Bancolombia",
+    "recordsCreated": 34,
+    "period": {
+      "from": "2026-11-01",
+      "to": "2026-11-11"
+    }
+  }
+}

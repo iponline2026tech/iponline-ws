@@ -1,0 +1,20 @@
+{
+  "v": 1,
+  "seq": 9001,
+  "id": "0192f5a0-0004-7000-8000-00000000232c",
+  "type": "session.revoked",
+  "occurredAt": "2026-11-12T15:04:44.120044Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81004",
+  "data": {
+    "sessionId": null,
+    "exceptSessionId": 412,
+    "reason": "password_changed"
+  }
+}

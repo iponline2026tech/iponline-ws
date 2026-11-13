@@ -1,0 +1,7 @@
+# .gitignore · importadoraRealtime: secretos locales, binarios y salidas de pruebas
+.env
+*.exe
+realtime
+/bin/
+coverage.out
+*.test

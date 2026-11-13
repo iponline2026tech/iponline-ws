@@ -1,0 +1,53 @@
+{
+  "v": 1,
+  "seq": 9013,
+  "id": "0192f5a0-0010-7000-8000-000000002338",
+  "type": "transfer.status_changed",
+  "occurredAt": "2026-11-12T15:04:56.120056Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1,
+    3
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 6,
+    "name": "Kevin Morales Duarte"
+  },
+  "correlationId": "req-81016",
+  "data": {
+    "entity": {
+      "kind": "transfer",
+      "id": 42,
+      "version": "2026-11-12T15:04:11.120011Z"
+    },
+    "serial": "TR-000042",
+    "from": "in_transit",
+    "to": "with_novelty",
+    "originWarehouseId": 1,
+    "destinationWarehouseId": 3,
+    "lines": [
+      {
+        "lineId": 77,
+        "productId": 1,
+        "productCode": "AP121064-1",
+        "productName": "ABRAZADERA PULSAR 180 UG",
+        "quantity": 6,
+        "receivedQty": 5,
+        "destinationLocation": "ESTANTE-N-01"
+      }
+    ],
+    "noveltyNotes": "Llegó una abrazadera menos",
+    "cancelReason": null,
+    "dispatchedBy": {
+      "type": "employee",
+      "id": 5,
+      "name": "Jhon Alexander Pérez"
+    },
+    "receivedBy": {
+      "type": "employee",
+      "id": 6,
+      "name": "Kevin Morales Duarte"
+    }
+  }
+}

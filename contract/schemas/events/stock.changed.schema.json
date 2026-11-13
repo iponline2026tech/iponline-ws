@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/stock.changed.schema.json",
+  "title": "data de stock.changed",
+  "type": "object",
+  "required": [
+    "cause",
+    "rows",
+    "totals"
+  ],
+  "properties": {
+    "cause": {
+      "type": "object",
+      "required": [
+        "type",
+        "referenceType",
+        "referenceId",
+        "referenceSerial"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "sale_out",
+            "transfer_out",
+            "transfer_in",
+            "purchase_in",
+            "return_in",
+            "adjustment",
+            "count_adjust",
+            "reservation",
+            "release",
+            "relocation"
+          ]
+        },
+        "referenceType": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "sale",
+                "transfer",
+                "purchase",
+                "return",
+                "count",
+                "manual"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "referenceId": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "referenceSerial": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "stockId",
+          "productId",
+          "productCode",
+          "warehouseId",
+          "location",
+          "available",
+          "reserved",
+          "sellable",
+          "minStock",
+          "lowStock",
+          "version"
+        ],
+        "properties": {
+          "stockId": {
+            "type": "integer"
+          },
+          "productId": {
+            "type": "integer"
+          },
+          "productCode": {
+            "type": "string"
+          },
+          "warehouseId": {
+            "type": "integer"
+          },
+          "location": {
+            "type": "string"
+          },
+          "available": {
+            "type": "integer"
+          },
+          "reserved": {
+            "type": "integer"
+          },
+          "sellable": {
+            "type": "integer"
+          },
+          "minStock": {
+            "type": "integer",
+            "description": "Mínimo del PRODUCTO en la bodega (stock_thresholds), igual en todas sus filas de esa bodega; no es por estante."
+          },
+          "lowStock": {
+            "type": "boolean",
+            "description": "true si el vendible del producto en la bodega (todos sus estantes) es menor que minStock o ya no queda nada."
+          },
+          "version": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "maxItems": 200
+    },
+    "totals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "productId",
+          "warehouseId",
+          "available",
+          "reserved",
+          "sellable"
+        ],
+        "properties": {
+          "productId": {
+            "type": "integer"
+          },
+          "warehouseId": {
+            "type": "integer"
+          },
+          "available": {
+            "type": "integer"
+          },
+          "reserved": {
+            "type": "integer"
+          },
+          "sellable": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

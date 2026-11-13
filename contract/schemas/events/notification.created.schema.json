@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/notification.created.schema.json",
+  "title": "data de notification.created",
+  "type": "object",
+  "required": [
+    "notificationId",
+    "kind",
+    "title",
+    "message",
+    "link"
+  ],
+  "properties": {
+    "notificationId": {
+      "type": "integer"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "info",
+        "success",
+        "warning",
+        "error",
+        "restore_record"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "link": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "module",
+            "subitem"
+          ],
+          "properties": {
+            "module": {
+              "type": "string"
+            },
+            "subitem": {
+              "type": "string"
+            },
+            "entity": {
+              "type": "object",
+              "required": [
+                "kind",
+                "id"
+              ],
+              "properties": {
+                "kind": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

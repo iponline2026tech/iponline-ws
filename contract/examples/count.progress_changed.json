@@ -1,0 +1,35 @@
+{
+  "v": 1,
+  "seq": 9015,
+  "id": "0192f5a0-0012-7000-8000-00000000233a",
+  "type": "count.progress_changed",
+  "occurredAt": "2026-11-12T15:04:58.120058Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 5,
+    "name": "Jhon Alexander Pérez"
+  },
+  "correlationId": "req-81018",
+  "data": {
+    "entity": {
+      "kind": "count",
+      "id": 8,
+      "version": "2026-11-12T15:04:13.120013Z"
+    },
+    "items": [
+      {
+        "productId": 4,
+        "productCode": "BAJAJ1LTR",
+        "location": "ESTANTE-P1-01",
+        "expectedQty": 18,
+        "countedQty": 17
+      }
+    ],
+    "countedLines": 1,
+    "totalLines": 1
+  }
+}

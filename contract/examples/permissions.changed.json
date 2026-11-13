@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "seq": 9002,
+  "id": "0192f5a0-0005-7000-8000-00000000232d",
+  "type": "permissions.changed",
+  "occurredAt": "2026-11-12T15:04:45.120045Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81005",
+  "data": {
+    "actorType": "employee",
+    "actorId": 5,
+    "permissions": [
+      "orders:view",
+      "orders:view_detail",
+      "orders:advance_stage",
+      "stock:view",
+      "stock:relocate",
+      "transfers:view",
+      "transfers:receive"
+    ]
+  }
+}

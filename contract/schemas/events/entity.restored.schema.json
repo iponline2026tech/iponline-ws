@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/entity.restored.schema.json",
+  "title": "data de entity.restored",
+  "type": "object",
+  "required": [
+    "entity",
+    "row",
+    "recycleBinId",
+    "restoredBy"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "company",
+            "admin",
+            "warehouse",
+            "warehouse_billing",
+            "doc_series",
+            "location",
+            "customer",
+            "customer_document",
+            "supplier",
+            "carrier",
+            "brand",
+            "category",
+            "model",
+            "product",
+            "product_code",
+            "product_supplier",
+            "role",
+            "employee",
+            "screensaver_settings"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "row": {
+      "type": "object"
+    },
+    "recycleBinId": {
+      "type": "integer"
+    },
+    "restoredBy": {
+      "type": "object",
+      "required": [
+        "type",
+        "id",
+        "name"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "employee",
+            "admin",
+            "superadmin",
+            "system"
+          ]
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

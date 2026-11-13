@@ -1,0 +1,34 @@
+{
+  "v": 1,
+  "seq": 9022,
+  "id": "0192f5a0-0019-7000-8000-000000002341",
+  "type": "sale.stage_changed",
+  "occurredAt": "2026-11-12T15:05:05.120065Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 5,
+    "name": "Jhon Alexander Pérez"
+  },
+  "correlationId": "req-81025",
+  "data": {
+    "entity": {
+      "kind": "sale",
+      "id": 301,
+      "version": "2026-11-12T15:04:19.120019Z"
+    },
+    "serial": "PED-000301",
+    "from": "verification_ok",
+    "to": "picking",
+    "status": "open",
+    "reason": null,
+    "takenBy": {
+      "type": "employee",
+      "id": 5,
+      "name": "Jhon Alexander Pérez"
+    }
+  }
+}

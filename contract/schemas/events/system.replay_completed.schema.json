@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/system.replay_completed.schema.json",
+  "title": "data de system.replay_completed",
+  "type": "object",
+  "required": [
+    "fromSeq",
+    "toSeq",
+    "count"
+  ],
+  "properties": {
+    "fromSeq": {
+      "type": "integer"
+    },
+    "toSeq": {
+      "type": "integer"
+    },
+    "count": {
+      "type": "integer"
+    }
+  }
+}

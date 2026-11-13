@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/return.status_changed.schema.json",
+  "title": "data de return.status_changed",
+  "type": "object",
+  "required": [
+    "entity",
+    "from",
+    "to",
+    "resolution",
+    "rejectReason"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "return"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "from": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ]
+    },
+    "to": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ]
+    },
+    "resolution": {
+      "type": "string",
+      "enum": [
+        "exchange",
+        "credit_balance"
+      ]
+    },
+    "rejectReason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

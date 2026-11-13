@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/purchase.created.schema.json",
+  "title": "data de purchase.created",
+  "type": "object",
+  "required": [
+    "purchase"
+  ],
+  "properties": {
+    "purchase": {
+      "type": "object"
+    }
+  }
+}

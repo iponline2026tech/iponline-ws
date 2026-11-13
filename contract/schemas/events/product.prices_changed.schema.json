@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/product.prices_changed.schema.json",
+  "title": "data de product.prices_changed",
+  "type": "object",
+  "required": [
+    "productId",
+    "prices",
+    "ivaRate",
+    "version"
+  ],
+  "properties": {
+    "productId": {
+      "type": "integer"
+    },
+    "prices": {
+      "type": "object",
+      "required": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "properties": {
+        "p1": {
+          "type": "number"
+        },
+        "p2": {
+          "type": "number"
+        },
+        "p3": {
+          "type": "number"
+        },
+        "p4": {
+          "type": "number"
+        }
+      }
+    },
+    "ivaRate": {
+      "type": "number"
+    },
+    "version": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

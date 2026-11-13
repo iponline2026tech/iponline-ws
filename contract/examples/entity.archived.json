@@ -1,0 +1,24 @@
+{
+  "v": 1,
+  "seq": 9007,
+  "id": "0192f5a0-000a-7000-8000-000000002332",
+  "type": "entity.archived",
+  "occurredAt": "2026-11-12T15:04:50.120050Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81010",
+  "data": {
+    "entity": {
+      "kind": "product",
+      "id": 3,
+      "version": "2026-11-12T15:04:05.120005Z"
+    },
+    "reason": "Referencia duplicada de DG121002",
+    "recycleBinId": 57
+  }
+}

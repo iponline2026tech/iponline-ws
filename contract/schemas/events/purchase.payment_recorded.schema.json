@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/purchase.payment_recorded.schema.json",
+  "title": "data de purchase.payment_recorded",
+  "type": "object",
+  "required": [
+    "purchaseId",
+    "paid",
+    "balance",
+    "cashAmount",
+    "transferAmount"
+  ],
+  "properties": {
+    "purchaseId": {
+      "type": "integer"
+    },
+    "paid": {
+      "type": "number"
+    },
+    "balance": {
+      "type": "number"
+    },
+    "cashAmount": {
+      "type": "number"
+    },
+    "transferAmount": {
+      "type": "number"
+    }
+  }
+}

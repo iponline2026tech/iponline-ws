@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "seq": 9038,
+  "id": "0192f5a0-0029-7000-8000-000000002351",
+  "type": "return.created",
+  "occurredAt": "2026-11-12T15:05:21.120081Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81041",
+  "data": {
+    "return": {
+      "id": 19,
+      "serial": "DEV-000019",
+      "saleId": 301,
+      "status": "pending",
+      "resolution": "exchange",
+      "total": 25000,
+      "updatedAt": "2026-11-12T15:04:31.120031Z"
+    }
+  }
+}

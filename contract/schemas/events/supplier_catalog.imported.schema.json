@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/supplier_catalog.imported.schema.json",
+  "title": "data de supplier_catalog.imported",
+  "type": "object",
+  "required": [
+    "supplierId",
+    "linked",
+    "warnings"
+  ],
+  "properties": {
+    "supplierId": {
+      "type": "integer"
+    },
+    "linked": {
+      "type": "integer"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

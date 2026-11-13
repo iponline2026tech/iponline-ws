@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/credit.balance_changed.schema.json",
+  "title": "data de credit.balance_changed",
+  "type": "object",
+  "required": [
+    "customerId",
+    "creditLimit",
+    "used",
+    "available",
+    "favorBalance",
+    "status",
+    "entry",
+    "version"
+  ],
+  "properties": {
+    "customerId": {
+      "type": "integer"
+    },
+    "creditLimit": {
+      "type": "number"
+    },
+    "used": {
+      "type": "number"
+    },
+    "available": {
+      "type": "number"
+    },
+    "favorBalance": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "warning",
+        "blocked"
+      ]
+    },
+    "entry": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "amount",
+            "referenceType",
+            "referenceId"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "charge",
+                "payment",
+                "return",
+                "adjust"
+              ]
+            },
+            "amount": {
+              "type": "number"
+            },
+            "referenceType": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "referenceId": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "version": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

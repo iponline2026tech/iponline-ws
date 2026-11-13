@@ -1,0 +1,38 @@
+{
+  "v": 1,
+  "seq": 9031,
+  "id": "0192f5a0-0022-7000-8000-00000000234a",
+  "type": "cash_session.status_changed",
+  "occurredAt": "2026-11-12T15:05:14.120074Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81034",
+  "data": {
+    "entity": {
+      "kind": "cash_session",
+      "id": 64,
+      "version": "2026-11-12T15:04:27.120027Z"
+    },
+    "from": null,
+    "to": "open",
+    "openedBy": {
+      "type": "employee",
+      "id": 3,
+      "name": "Juan Felipe Montoya"
+    },
+    "closedBy": null,
+    "totals": {
+      "cashIn": 0,
+      "transferIn": 0,
+      "expenses": 0,
+      "expectedCash": 200000
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/system.welcome.schema.json",
+  "title": "data de system.welcome",
+  "type": "object",
+  "required": [
+    "currentSeq",
+    "channels",
+    "heartbeatSec",
+    "contractVersion"
+  ],
+  "properties": {
+    "currentSeq": {
+      "type": "integer"
+    },
+    "channels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "heartbeatSec": {
+      "type": "integer"
+    },
+    "contractVersion": {
+      "const": 1
+    }
+  }
+}

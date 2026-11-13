@@ -1,0 +1,25 @@
+{
+  "v": 1,
+  "seq": 9030,
+  "id": "0192f5a0-0021-7000-8000-000000002349",
+  "type": "bank_record.status_changed",
+  "occurredAt": "2026-11-12T15:05:13.120073Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "employee",
+    "id": 7,
+    "name": "Laura Sofía Castro"
+  },
+  "correlationId": "req-81033",
+  "data": {
+    "entity": {
+      "kind": "bank_record",
+      "id": 905,
+      "version": "2026-11-12T15:04:26.120026Z"
+    },
+    "from": "pending",
+    "to": "confirmed",
+    "paymentId": 640
+  }
+}

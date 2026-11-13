@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/transfer.status_changed.schema.json",
+  "title": "data de transfer.status_changed",
+  "type": "object",
+  "required": [
+    "entity",
+    "serial",
+    "from",
+    "to",
+    "originWarehouseId",
+    "destinationWarehouseId",
+    "lines",
+    "noveltyNotes",
+    "cancelReason",
+    "dispatchedBy",
+    "receivedBy"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "transfer"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "serial": {
+      "type": "string"
+    },
+    "from": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "in_transit",
+        "received",
+        "with_novelty",
+        "cancelled"
+      ]
+    },
+    "to": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "in_transit",
+        "received",
+        "with_novelty",
+        "cancelled"
+      ]
+    },
+    "originWarehouseId": {
+      "type": "integer"
+    },
+    "destinationWarehouseId": {
+      "type": "integer"
+    },
+    "lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "lineId",
+          "productId",
+          "productCode",
+          "productName",
+          "quantity",
+          "receivedQty",
+          "destinationLocation"
+        ],
+        "properties": {
+          "lineId": {
+            "type": "integer"
+          },
+          "productId": {
+            "type": "integer"
+          },
+          "productCode": {
+            "type": "string"
+          },
+          "productName": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "receivedQty": {
+            "type": "integer"
+          },
+          "destinationLocation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "noveltyNotes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cancelReason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "dispatchedBy": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "id",
+            "name"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "employee",
+                "admin",
+                "superadmin",
+                "system"
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "receivedBy": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "id",
+            "name"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "employee",
+                "admin",
+                "superadmin",
+                "system"
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

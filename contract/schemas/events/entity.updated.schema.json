@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/entity.updated.schema.json",
+  "title": "data de entity.updated",
+  "type": "object",
+  "required": [
+    "entity",
+    "row",
+    "changedFields"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "company",
+            "admin",
+            "warehouse",
+            "warehouse_billing",
+            "doc_series",
+            "location",
+            "customer",
+            "customer_document",
+            "supplier",
+            "carrier",
+            "brand",
+            "category",
+            "model",
+            "product",
+            "product_code",
+            "product_supplier",
+            "role",
+            "employee",
+            "screensaver_settings"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "row": {
+      "type": "object"
+    },
+    "changedFields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

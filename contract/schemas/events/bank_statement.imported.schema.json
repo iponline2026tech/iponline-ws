@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/bank_statement.imported.schema.json",
+  "title": "data de bank_statement.imported",
+  "type": "object",
+  "required": [
+    "statementId",
+    "bank",
+    "recordsCreated",
+    "period"
+  ],
+  "properties": {
+    "statementId": {
+      "type": "integer"
+    },
+    "bank": {
+      "type": "string"
+    },
+    "recordsCreated": {
+      "type": "integer"
+    },
+    "period": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "from",
+            "to"
+          ],
+          "properties": {
+            "from": {
+              "type": "string"
+            },
+            "to": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

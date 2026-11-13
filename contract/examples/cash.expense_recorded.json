@@ -1,0 +1,29 @@
+{
+  "v": 1,
+  "seq": 9033,
+  "id": "0192f5a0-0024-7000-8000-00000000234c",
+  "type": "cash.expense_recorded",
+  "occurredAt": "2026-11-12T15:05:16.120076Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81036",
+  "data": {
+    "expense": {
+      "id": 210,
+      "sessionId": 64,
+      "expenseType": "cleaning_supplies",
+      "cashAmount": 12000,
+      "transferAmount": 0,
+      "concept": "Bolsas y desinfectante",
+      "referenceType": null,
+      "referenceId": null
+    }
+  }
+}

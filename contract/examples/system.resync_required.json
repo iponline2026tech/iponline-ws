@@ -1,0 +1,18 @@
+{
+  "v": 1,
+  "seq": 0,
+  "id": "0192f5a0-0002-7000-8000-00000000232a",
+  "type": "system.resync_required",
+  "occurredAt": "2026-11-12T15:04:42.120042Z",
+  "companyId": null,
+  "warehouseIds": [],
+  "actor": {
+    "type": "system",
+    "id": null,
+    "name": "importadoraRealtime"
+  },
+  "data": {
+    "reason": "backup_restored",
+    "currentSeq": 9100
+  }
+}

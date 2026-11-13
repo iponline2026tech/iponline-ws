@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/permissions.changed.schema.json",
+  "title": "data de permissions.changed",
+  "type": "object",
+  "required": [
+    "actorType",
+    "actorId",
+    "permissions"
+  ],
+  "properties": {
+    "actorType": {
+      "type": "string",
+      "enum": [
+        "employee",
+        "admin",
+        "superadmin",
+        "system"
+      ]
+    },
+    "actorId": {
+      "type": "integer"
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

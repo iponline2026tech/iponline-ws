@@ -1,0 +1,24 @@
+{
+  "v": 1,
+  "seq": 0,
+  "id": "0192f5a0-0000-7000-8000-000000002328",
+  "type": "system.welcome",
+  "occurredAt": "2026-11-12T15:04:40.120040Z",
+  "companyId": null,
+  "warehouseIds": [],
+  "actor": {
+    "type": "system",
+    "id": null,
+    "name": "importadoraRealtime"
+  },
+  "data": {
+    "currentSeq": 9000,
+    "channels": [
+      "company:1",
+      "warehouse:1",
+      "actor:employee:3"
+    ],
+    "heartbeatSec": 25,
+    "contractVersion": 1
+  }
+}

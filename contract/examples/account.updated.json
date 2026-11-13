@@ -1,0 +1,29 @@
+{
+  "v": 1,
+  "seq": 9003,
+  "id": "0192f5a0-0006-7000-8000-00000000232e",
+  "type": "account.updated",
+  "occurredAt": "2026-11-12T15:04:46.120046Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81006",
+  "data": {
+    "user": {
+      "actor": {
+        "id": 3,
+        "actorType": "employee",
+        "firstName": "Juan Felipe",
+        "lastName": "Montoya",
+        "email": "vendedor.bolivar@importadora.com",
+        "companyId": 1,
+        "warehouseId": 1
+      }
+    },
+    "version": "2026-11-12T15:04:01.120001Z"
+  }
+}

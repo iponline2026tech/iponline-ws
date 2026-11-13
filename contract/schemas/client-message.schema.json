@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/client-message.schema.json",
+  "title": "Mensaje del cliente al servidor (contrato v1)",
+  "description": "Los únicos mensajes que acepta el servidor; cualquier otro, o uno de más de 4 KB, cierra con 4400.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "v",
+        "lastSeq"
+      ],
+      "properties": {
+        "type": {
+          "const": "hello"
+        },
+        "v": {
+          "const": 1
+        },
+        "lastSeq": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "ts"
+      ],
+      "properties": {
+        "type": {
+          "const": "pong"
+        },
+        "ts": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  ]
+}

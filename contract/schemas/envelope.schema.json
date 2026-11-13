@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/envelope.schema.json",
+  "title": "Sobre de un evento del websocket (contrato v1)",
+  "description": "Todo mensaje del servidor al cliente. El cuerpo (data) se valida aparte con events/<type>.schema.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "v",
+    "seq",
+    "id",
+    "type",
+    "occurredAt",
+    "companyId",
+    "warehouseIds",
+    "actor",
+    "data"
+  ],
+  "properties": {
+    "v": {
+      "const": 1
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "0 en los system.* que no salen de la BD"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "system.welcome",
+        "system.replay_completed",
+        "system.resync_required",
+        "system.watermark",
+        "session.revoked",
+        "permissions.changed",
+        "account.updated",
+        "entity.created",
+        "entity.updated",
+        "entity.status_changed",
+        "entity.archived",
+        "entity.restored",
+        "entity.deleted",
+        "product.prices_changed",
+        "stock.changed",
+        "transfer.created",
+        "transfer.status_changed",
+        "count.created",
+        "count.progress_changed",
+        "count.status_changed",
+        "cart.updated",
+        "quotation.created",
+        "quotation.updated",
+        "quotation.status_changed",
+        "sale.created",
+        "sale.stage_changed",
+        "sale.payment_changed",
+        "invoice.issued",
+        "invoice.annulled",
+        "payment.created",
+        "payment.status_changed",
+        "credit.balance_changed",
+        "bank_statement.imported",
+        "bank_record.status_changed",
+        "cash_session.status_changed",
+        "cash_session.totals_changed",
+        "cash.expense_recorded",
+        "purchase.created",
+        "purchase.status_changed",
+        "purchase.payment_recorded",
+        "supplier_catalog.imported",
+        "return.created",
+        "return.status_changed",
+        "notification.created",
+        "notification.read",
+        "audit.logged",
+        "backup.created",
+        "backup.restored"
+      ]
+    },
+    "occurredAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "companyId": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "warehouseIds": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "actor": {
+      "type": "object",
+      "required": [
+        "type",
+        "id",
+        "name"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "employee",
+            "admin",
+            "superadmin",
+            "system"
+          ]
+        },
+        "id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "correlationId": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object"
+    }
+  }
+}

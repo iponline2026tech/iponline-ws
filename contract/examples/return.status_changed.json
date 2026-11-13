@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "seq": 9039,
+  "id": "0192f5a0-002a-7000-8000-000000002352",
+  "type": "return.status_changed",
+  "occurredAt": "2026-11-12T15:05:22.120082Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81042",
+  "data": {
+    "entity": {
+      "kind": "return",
+      "id": 19,
+      "version": "2026-11-12T15:04:32.120032Z"
+    },
+    "from": "pending",
+    "to": "approved",
+    "resolution": "exchange",
+    "rejectReason": null
+  }
+}

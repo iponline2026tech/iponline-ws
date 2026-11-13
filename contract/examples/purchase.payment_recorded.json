@@ -1,0 +1,24 @@
+{
+  "v": 1,
+  "seq": 9036,
+  "id": "0192f5a0-0027-7000-8000-00000000234f",
+  "type": "purchase.payment_recorded",
+  "occurredAt": "2026-11-12T15:05:19.120079Z",
+  "companyId": 1,
+  "warehouseIds": [
+    3
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81039",
+  "data": {
+    "purchaseId": 55,
+    "paid": 680400,
+    "balance": 453600,
+    "cashAmount": 180400,
+    "transferAmount": 500000
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/system.resync_required.schema.json",
+  "title": "data de system.resync_required",
+  "type": "object",
+  "required": [
+    "reason",
+    "currentSeq"
+  ],
+  "properties": {
+    "reason": {
+      "type": "string",
+      "enum": [
+        "gap_too_large",
+        "contract_changed",
+        "backup_restored"
+      ]
+    },
+    "currentSeq": {
+      "type": "integer"
+    }
+  }
+}

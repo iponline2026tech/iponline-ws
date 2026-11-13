@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/quotation.created.schema.json",
+  "title": "data de quotation.created",
+  "type": "object",
+  "required": [
+    "quotation"
+  ],
+  "properties": {
+    "quotation": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/invoice.annulled.schema.json",
+  "title": "data de invoice.annulled",
+  "type": "object",
+  "required": [
+    "entity",
+    "saleId",
+    "reason"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "invoice"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "saleId": {
+      "type": "integer"
+    },
+    "reason": {
+      "type": "string"
+    }
+  }
+}

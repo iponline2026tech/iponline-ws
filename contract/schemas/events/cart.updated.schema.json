@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/cart.updated.schema.json",
+  "title": "data de cart.updated",
+  "type": "object",
+  "required": [
+    "cart"
+  ],
+  "properties": {
+    "cart": {
+      "type": "object"
+    }
+  }
+}

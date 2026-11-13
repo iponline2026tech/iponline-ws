@@ -1,0 +1,37 @@
+{
+  "v": 1,
+  "seq": 9005,
+  "id": "0192f5a0-0008-7000-8000-000000002330",
+  "type": "entity.updated",
+  "occurredAt": "2026-11-12T15:04:48.120048Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "employee",
+    "id": 7,
+    "name": "Laura Sofía Castro"
+  },
+  "correlationId": "req-81008",
+  "data": {
+    "entity": {
+      "kind": "customer",
+      "id": 2,
+      "version": "2026-11-12T15:04:03.120003Z"
+    },
+    "row": {
+      "id": 2,
+      "documentType": "CC",
+      "document": "1004260479",
+      "name": "VICTOR MANUEL ROJAS",
+      "tradeName": "TALLER ROJAS",
+      "phone": "3128904512",
+      "city": "Cali",
+      "status": "active",
+      "updatedAt": "2026-11-12T15:04:03.120003Z"
+    },
+    "changedFields": [
+      "phone",
+      "city"
+    ]
+  }
+}

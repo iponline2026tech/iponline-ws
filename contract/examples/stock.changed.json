@@ -1,0 +1,49 @@
+{
+  "v": 1,
+  "seq": 9011,
+  "id": "0192f5a0-000e-7000-8000-000000002336",
+  "type": "stock.changed",
+  "occurredAt": "2026-11-12T15:04:54.120054Z",
+  "companyId": 1,
+  "warehouseIds": [
+    1
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 5,
+    "name": "Jhon Alexander Pérez"
+  },
+  "correlationId": "req-81014",
+  "data": {
+    "cause": {
+      "type": "transfer_out",
+      "referenceType": "transfer",
+      "referenceId": 42,
+      "referenceSerial": "TR-000042"
+    },
+    "rows": [
+      {
+        "stockId": 1,
+        "productId": 1,
+        "productCode": "AP121064-1",
+        "warehouseId": 1,
+        "location": "ESTANTE-P1-01",
+        "available": 23,
+        "reserved": 0,
+        "sellable": 23,
+        "minStock": 5,
+        "lowStock": false,
+        "version": "2026-11-12T15:04:09.120009Z"
+      }
+    ],
+    "totals": [
+      {
+        "productId": 1,
+        "warehouseId": 1,
+        "available": 23,
+        "reserved": 0,
+        "sellable": 23
+      }
+    ]
+  }
+}

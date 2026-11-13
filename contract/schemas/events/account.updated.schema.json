@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/account.updated.schema.json",
+  "title": "data de account.updated",
+  "type": "object",
+  "required": [
+    "user",
+    "version"
+  ],
+  "properties": {
+    "user": {
+      "type": "object"
+    },
+    "version": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/payment.status_changed.schema.json",
+  "title": "data de payment.status_changed",
+  "type": "object",
+  "required": [
+    "entity",
+    "from",
+    "to",
+    "reason"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "payment"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "from": {
+      "type": "string",
+      "enum": [
+        "review",
+        "verified",
+        "issue",
+        "voided"
+      ]
+    },
+    "to": {
+      "type": "string",
+      "enum": [
+        "review",
+        "verified",
+        "issue",
+        "voided"
+      ]
+    },
+    "reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

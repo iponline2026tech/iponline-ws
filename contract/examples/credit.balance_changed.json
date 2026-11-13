@@ -1,0 +1,30 @@
+{
+  "v": 1,
+  "seq": 9028,
+  "id": "0192f5a0-001f-7000-8000-000000002347",
+  "type": "credit.balance_changed",
+  "occurredAt": "2026-11-12T15:05:11.120071Z",
+  "companyId": 1,
+  "warehouseIds": [],
+  "actor": {
+    "type": "employee",
+    "id": 3,
+    "name": "Juan Felipe Montoya"
+  },
+  "correlationId": "req-81031",
+  "data": {
+    "customerId": 2,
+    "creditLimit": 2000000,
+    "used": 1525000,
+    "available": 475000,
+    "favorBalance": 0,
+    "status": "warning",
+    "entry": {
+      "type": "charge",
+      "amount": 25000,
+      "referenceType": "sale",
+      "referenceId": 301
+    },
+    "version": "2026-11-12T15:04:25.120025Z"
+  }
+}

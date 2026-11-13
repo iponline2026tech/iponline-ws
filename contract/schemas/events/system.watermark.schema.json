@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/system.watermark.schema.json",
+  "title": "data de system.watermark",
+  "type": "object",
+  "required": [
+    "seq"
+  ],
+  "properties": {
+    "seq": {
+      "type": "integer"
+    }
+  }
+}

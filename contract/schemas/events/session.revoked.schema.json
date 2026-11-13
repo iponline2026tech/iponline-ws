@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/session.revoked.schema.json",
+  "title": "data de session.revoked",
+  "type": "object",
+  "required": [
+    "sessionId",
+    "exceptSessionId",
+    "reason"
+  ],
+  "properties": {
+    "sessionId": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "exceptSessionId": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "enum": [
+        "logout",
+        "password_changed",
+        "account_inactive",
+        "company_inactive",
+        "warehouse_inactive"
+      ]
+    }
+  }
+}

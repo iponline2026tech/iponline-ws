@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/return.created.schema.json",
+  "title": "data de return.created",
+  "type": "object",
+  "required": [
+    "return"
+  ],
+  "properties": {
+    "return": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "seq": 9034,
+  "id": "0192f5a0-0025-7000-8000-00000000234d",
+  "type": "purchase.created",
+  "occurredAt": "2026-11-12T15:05:17.120077Z",
+  "companyId": 1,
+  "warehouseIds": [
+    3
+  ],
+  "actor": {
+    "type": "admin",
+    "id": 1,
+    "name": "Andrés Felipe Ramos"
+  },
+  "correlationId": "req-81037",
+  "data": {
+    "purchase": {
+      "id": 55,
+      "serial": "OC-000055",
+      "supplierId": 10,
+      "supplierName": "BAJAJ COLOMBIA MOTORS S.A.S.",
+      "status": "ordered",
+      "total": 1134000,
+      "updatedAt": "2026-11-12T15:04:29.120029Z"
+    }
+  }
+}

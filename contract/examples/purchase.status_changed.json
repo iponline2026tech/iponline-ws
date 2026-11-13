@@ -1,0 +1,34 @@
+{
+  "v": 1,
+  "seq": 9035,
+  "id": "0192f5a0-0026-7000-8000-00000000234e",
+  "type": "purchase.status_changed",
+  "occurredAt": "2026-11-12T15:05:18.120078Z",
+  "companyId": 1,
+  "warehouseIds": [
+    3
+  ],
+  "actor": {
+    "type": "employee",
+    "id": 6,
+    "name": "Kevin Morales Duarte"
+  },
+  "correlationId": "req-81038",
+  "data": {
+    "entity": {
+      "kind": "purchase",
+      "id": 55,
+      "version": "2026-11-12T15:04:30.120030Z"
+    },
+    "from": "ordered",
+    "to": "partial",
+    "lines": [
+      {
+        "productId": 1,
+        "ordered": 1000,
+        "received": 600
+      }
+    ],
+    "reason": null
+  }
+}

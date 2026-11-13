@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/sale.stage_changed.schema.json",
+  "title": "data de sale.stage_changed",
+  "type": "object",
+  "required": [
+    "entity",
+    "serial",
+    "from",
+    "to",
+    "status",
+    "reason",
+    "takenBy"
+  ],
+  "properties": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "sale"
+          ]
+        },
+        "id": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "serial": {
+      "type": "string"
+    },
+    "from": {
+      "type": "string",
+      "enum": [
+        "verification",
+        "verification_ok",
+        "picking",
+        "picking_ok",
+        "packing",
+        "packing_ok",
+        "invoicing",
+        "invoicing_ok",
+        "dispatch",
+        "sent",
+        "cancelled"
+      ]
+    },
+    "to": {
+      "type": "string",
+      "enum": [
+        "verification",
+        "verification_ok",
+        "picking",
+        "picking_ok",
+        "packing",
+        "packing_ok",
+        "invoicing",
+        "invoicing_ok",
+        "dispatch",
+        "sent",
+        "cancelled"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "completed",
+        "cancelled"
+      ]
+    },
+    "reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "takenBy": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "type",
+            "id",
+            "name"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "employee",
+                "admin",
+                "superadmin",
+                "system"
+              ]
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

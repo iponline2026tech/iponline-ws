@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://importadora.local/realtime/contract/v1/events/cash.expense_recorded.schema.json",
+  "title": "data de cash.expense_recorded",
+  "type": "object",
+  "required": [
+    "expense"
+  ],
+  "properties": {
+    "expense": {
+      "type": "object",
+      "required": [
+        "id",
+        "sessionId",
+        "expenseType",
+        "cashAmount",
+        "transferAmount",
+        "concept",
+        "referenceType",
+        "referenceId"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "sessionId": {
+          "type": "integer"
+        },
+        "expenseType": {
+          "type": "string",
+          "enum": [
+            "merchandise_arrival",
+            "payroll",
+            "loans",
+            "overtime",
+            "cleaning_supplies",
+            "services",
+            "other"
+          ]
+        },
+        "cashAmount": {
+          "type": "number"
+        },
+        "transferAmount": {
+          "type": "number"
+        },
+        "concept": {
+          "type": "string"
+        },
+        "referenceType": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "referenceId": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
