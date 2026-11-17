@@ -102,7 +102,7 @@ Por la decisión 2, el superadmin solo recibe `platform` y su canal personal: nu
 | `customer_document` | `POST /customers/:id/documents`, `…/renew`, `DELETE …/documents/:docId` | `company:{id}` | `customers:view` |
 | `supplier` / `carrier` | `POST/PUT/DELETE /externals` (según su tipo) | `company:{id}` | `suppliers:view`, `purchases:view` |
 | `brand` / `category` / `model` | `POST/PUT/DELETE /brands`, `/categories`, `/models` | `company:{id}` | `brands:view` / `categories:view` / `models:view`, `products:view`, `catalog:view` |
-| `product` | `POST/PUT/DELETE /products` | `company:{id}` | `products:view`, `catalog:view`, `stock:view`, `transfers:view`, `purchases:view` |
+| `product` | `POST/PUT/DELETE /products` y `POST/DELETE /products/:id/images` (la fila viaja con `images`: nombres de objeto en la carpeta V2.0 del bucket; la primera es la principal) | `company:{id}` | `products:view`, `catalog:view`, `stock:view`, `transfers:view`, `purchases:view` |
 | `product_code` | `POST/DELETE /products/:id/codes` | `company:{id}` | `products:view`, `catalog:view` |
 | `product_supplier` | `POST/DELETE /products/:id/suppliers`, `PUT/DELETE /purchases/suppliers/:supplierId/products` | `company:{id}` | `products:view`, `purchases:view` |
 | `role` | `POST/PUT/DELETE /roles` | `company:{id}` | `roles:view`, `employees:view` |

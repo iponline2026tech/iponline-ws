@@ -23,3 +23,7 @@
 
 - `stock.changed`: `minStock` pasa a ser el mínimo del **producto en la bodega** (tabla `stock_thresholds`), no el del estante, y `lowStock` se calcula con el vendible de todos los estantes del producto en esa bodega (`< minStock` o sin vendible). Misma forma, otro significado: el mismo criterio que Existencias, el reporte y las alertas.
 - Las alertas de stock bajo y agotado llegan como `notification.created` (tipos `warning` y `error`, `link` a Inventario).
+
+## v1 — 2026-11-17 — imágenes de productos (sin cambio de forma)
+
+- `POST /products/:id/images` (subir a Cloud Storage, carpeta `dependencias/img/productos/V2.0`) y `DELETE /products/:id/images` (quitar de la lista) emiten el mismo `entity.updated` de `product` que la edición: la fila trae `images` y `changedFields` incluye `images`. No hay tipos ni campos nuevos.
